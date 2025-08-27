@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind and daisyui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="hind">
+    <main class="max-w-[1900px]">
+      <!-- heder section start  -->
+      <header
+        class="flex flex-col gap-y-5 justify-between items-center md:flex-row px-14 py-6"
+      >
+        <!-- logo section  -->
+        <div class="flex">
+          <!-- logo  -->
+          <div>
+            <img src="./assets/logo.png" alt="" height="50px" width="50px" />
+          </div>
+          <!-- logo text  -->
+          <div class="ml-1">
+            <h1 class="text-[#006747] font-bold text-[26px] leading-6.5">
+              Emergency
+              <br />
+              Service
+            </h1>
+          </div>
+        </div>
+        <!-- nav section  -->
+        <div
+          class="flex flex-wrap md:flex-row justify-center items-center gap-5"
+        >
+          <!-- life section  -->
+          <div
+            class="flex gap-2.5 items-center px-8 py-[11px] bg-green-100 rounded-3xl font-semibold"
+          >
+            <span>0</span>
+            <i class="fa-solid fa-heart text-red-700 text-3xl"></i>
+          </div>
+          <!-- coin section  -->
+          <div
+            class="flex gap-2.5 px-[34px] py-3.5 bg-green-100 rounded-3xl font-semibold"
+          >
+            <span>100</span>
+            <img src="./assets/coin.png" alt="" width="24px" height="24px" />
+          </div>
+          <!-- copy section  -->
+          <div
+            class="px-[39px] py-3.5 bg-[#00a63e] rounded-3xl text-white font-semibold"
+          >
+            <span>0</span>
+            <span>Copy</span>
+          </div>
+        </div>
+      </header>
+      <!-- header section close  -->
+    </main>
+  </body>
+</html>
