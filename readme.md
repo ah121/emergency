@@ -16,9 +16,14 @@
 
 3. What is **Event Bubbling** and how does it work?
  Ans:
-	Event Bubbling: Event bubbling will active when a event call on a specific HTML element. It goes upwards to its parents and cover whole documents as like a tree.
-
+	Event Bubbling: Event bubbling will active when a event call on a specific HTML element. After calling an event  it goes upwards to its parents and cover whole documents as like a tree.
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+ Ans:
+	Event Delegation: Event delegation is a method where a single event listener is  added to the parent element to handle events which act on its child element. It is useful for performance, simple code, dynamic content handling and use less memory.
+
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+ Ans:
+	preventDefault(): preventDefault() method  is the method of event interface that tells that the event is handled and its default action like scrolling, link navigation pasting text should not be taken. This method continues until one of its event listeners stop the event.
+	 stopPropagation():  stopPropagation() method is called within an event handler it stop the event continuing its journey upwards or downwards in the DOM tree. so to stop a event stop propagation event need to call.
 
