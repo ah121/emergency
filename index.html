@@ -34,7 +34,7 @@
       <header
         class="flex flex-col gap-y-5 justify-between items-center md:flex-row px-14 py-6"
       >
-        <!-- logo section  -->
+        <!-- logo section start  -->
         <div class="flex">
           <!-- logo  -->
           <div>
@@ -49,7 +49,8 @@
             </h1>
           </div>
         </div>
-        <!-- nav section  -->
+        <!-- logo section  close-->
+        <!-- nav section start -->
         <div
           class="flex flex-wrap md:flex-row justify-center items-center gap-5"
         >
@@ -57,24 +58,25 @@
           <div
             class="flex gap-2.5 items-center px-8 py-[11px] bg-green-100 rounded-3xl font-semibold"
           >
-            <span>0</span>
+            <span id="total-click">0</span>
             <i class="fa-solid fa-heart text-red-700 text-3xl"></i>
           </div>
           <!-- coin section  -->
           <div
             class="flex gap-2.5 px-[34px] py-3.5 bg-green-100 rounded-3xl font-semibold"
           >
-            <span>100</span>
+            <span id="coin-counter">100</span>
             <img src="./assets/coin.png" alt="" width="24px" height="24px" />
           </div>
           <!-- copy section  -->
           <div
             class="px-[39px] py-3.5 bg-[#00a63e] rounded-3xl text-white font-semibold"
           >
-            <span>0</span>
+            <span id="total-copy">0</span>
             <span>Copy</span>
           </div>
         </div>
+        <!-- nav section close  -->
       </header>
       <!-- header section close  -->
       <!-- hero section start  -->
@@ -117,7 +119,7 @@
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <!-- card 1 start  -->
                 <div
-                  class="bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -129,12 +131,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base xl:text-lg font-bold">
+                    <h1 class="heading text-base xl:text-lg font-bold">
                       National Emergency Number
                     </h1>
                     <p class="text-gray-400">National Emergency</p>
@@ -142,7 +146,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">999</h1>
+                    <h1 class="call-num font-bold mb-2.5">999</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >All</span
@@ -153,13 +157,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
+                      class="copy-btn flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -169,7 +173,7 @@
                 <!-- card 1 close -->
                 <!-- card 2 start  -->
                 <div
-                  class="bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -181,12 +185,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base lg:text-lg font-bold">
+                    <h1 class="heading text-base lg:text-lg font-bold">
                       Police Helpline Number
                     </h1>
                     <p class="text-gray-400">Police</p>
@@ -194,7 +200,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">999</h1>
+                    <h1 class="call-num font-bold mb-2.5">999</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >Police</span
@@ -205,13 +211,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 px-3 py-2 text-gray-500 rounded-lg border-2 border-gray-300"
+                      class="copy-btn flex-1 px-3 py-2 text-gray-500 rounded-lg border-2 border-gray-300"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 px-3 py-2 bg-[#00a63e] rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 px-3 py-2 bg-[#00a63e] rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -221,7 +227,7 @@
                 <!-- card 2 close -->
                 <!-- card 3 start  -->
                 <div
-                  class="bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -233,12 +239,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base lg:text-lg font-bold">
+                    <h1 class="heading text-base lg:text-lg font-bold">
                       Fire Service Number
                     </h1>
                     <p class="text-gray-400">Fire Service</p>
@@ -246,7 +254,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">999</h1>
+                    <h1 class="call-num font-bold mb-2.5">999</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >Fire</span
@@ -257,13 +265,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
+                      class="copy-btn flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -273,7 +281,7 @@
                 <!-- card 3 close -->
                 <!-- card 4 start  -->
                 <div
-                  class="bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -285,12 +293,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base lg:text-lg font-bold">
+                    <h1 class="heading text-base lg:text-lg font-bold">
                       Ambulance Service
                     </h1>
                     <p class="text-gray-400">Ambulance</p>
@@ -298,7 +308,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">1994-999999</h1>
+                    <h1 class="call-num font-bold mb-2.5">1994-999999</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >Health</span
@@ -309,13 +319,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
+                      class="copy-btn flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -325,7 +335,7 @@
                 <!-- card 4 close -->
                 <!-- card 5 start  -->
                 <div
-                  class="bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col rounded-2xl shadow-2xl justify-between gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -337,12 +347,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base lg:text-lg font-bold">
+                    <h1 class="heading text-base lg:text-lg font-bold">
                       Women & Child Helpline
                     </h1>
                     <p class="text-gray-400">Women & Child Helpline</p>
@@ -350,7 +362,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">109</h1>
+                    <h1 class="call-num font-bold mb-2.5">109</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >Help</span
@@ -361,13 +373,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
+                      class="copy-btn flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -377,7 +389,7 @@
                 <!-- card 5 close -->
                 <!-- card 6 start  -->
                 <div
-                  class="bg-white flex flex-col justify-between rounded-2xl shadow-2xl gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col justify-between rounded-2xl shadow-2xl gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -389,12 +401,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base lg:text-lg font-bold">
+                    <h1 class="heading text-base lg:text-lg font-bold">
                       Anti-Corruption Helpline
                     </h1>
                     <p class="text-gray-400">Anti-Corruption</p>
@@ -402,7 +416,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">106</h1>
+                    <h1 class="call-num font-bold mb-2.5">106</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >Govt.</span
@@ -413,13 +427,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
+                      class="copy-btn flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -429,7 +443,7 @@
                 <!-- card 6 close -->
                 <!-- card 7 start  -->
                 <div
-                  class="bg-white flex flex-col justify-between rounded-2xl shadow-2xl gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col justify-between rounded-2xl shadow-2xl gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -441,12 +455,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base lg:text-lg font-bold">
+                    <h1 class="heading text-base lg:text-lg font-bold">
                       Electricity Helpline
                     </h1>
                     <p class="text-gray-400">Electricity Outage</p>
@@ -454,7 +470,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">16216</h1>
+                    <h1 class="call-num font-bold mb-2.5">16216</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >Electricity</span
@@ -465,13 +481,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
+                      class="copy-btn flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -481,7 +497,7 @@
                 <!-- card 7 close -->
                 <!-- card 8 start  -->
                 <div
-                  class="bg-white flex flex-col justify-between rounded-2xl shadow-2xl gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col justify-between rounded-2xl shadow-2xl gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -493,12 +509,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base lg:text-lg font-bold">
+                    <h1 class="heading text-base lg:text-lg font-bold">
                       Brac Helpline
                     </h1>
                     <p class="text-gray-400">Brac</p>
@@ -506,7 +524,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">16445</h1>
+                    <h1 class="call-num font-bold mb-2.5">16445</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >NGO</span
@@ -517,13 +535,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
+                      class="copy-btn flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -533,7 +551,7 @@
                 <!-- card 8 close -->
                 <!-- card 9 start  -->
                 <div
-                  class="bg-white flex flex-col justify-between rounded-2xl shadow-2xl gap-y-3 p-3"
+                  class="cardDiv bg-white flex flex-col justify-between rounded-2xl shadow-2xl gap-y-3 p-3"
                 >
                   <!-- card image start  -->
                   <div class="flex justify-between items-center">
@@ -545,12 +563,14 @@
                         height="32px"
                       />
                     </figure>
-                    <i class="fa-regular fa-heart text-gray-400 text-2xl"></i>
+                    <i
+                      class="heart-icon fa-regular fa-heart text-gray-400 text-2xl"
+                    ></i>
                   </div>
                   <!-- card image close -->
                   <!-- card title start  -->
                   <div>
-                    <h1 class="text-base lg:text-lg font-bold">
+                    <h1 class="heading text-base lg:text-lg font-bold">
                       Bangladesh Railway Helpline
                     </h1>
                     <p class="text-gray-400">Bangladesh Railway</p>
@@ -558,7 +578,7 @@
                   <!-- card title close -->
                   <!-- card number section start  -->
                   <div class="">
-                    <h1 class="font-bold mb-2.5">163</h1>
+                    <h1 class="call-num font-bold mb-2.5">163</h1>
                     <span
                       class="text-gray-400 px-3 py-2 bg-gray-200 rounded-2xl"
                       >Travel</span
@@ -569,13 +589,13 @@
                   <div class="flex gap-4 justify-between items-center">
                     <button
                       type="button"
-                      class="flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
+                      class="copy-btn flex-1 py-2 px-3 rounded-lg border-2 border-gray-300 text-gray-500"
                     >
                       <i class="fa-regular fa-copy"></i> Copy
                     </button>
                     <button
                       type="button"
-                      class="flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
+                      class="call-btn flex-1 bg-[#00a63e] py-2 px-3 rounded-lg border-2 border-green-600 text-white"
                     >
                       <i class="fa-solid fa-phone"></i> Call
                     </button>
@@ -638,5 +658,6 @@
       </section>
       <!-- contact service section close -->
     </main>
+    <script src="scrpt.js"></script>
   </body>
 </html>
