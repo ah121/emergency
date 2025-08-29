@@ -5,7 +5,6 @@ for (let i = 0; i < heartClick.length; i++) {
   heartClick[i].addEventListener("click", function () {
     const heartTag = document.getElementById("total-click");
     let likeNum = parseInt(heartTag.innerText);
-
     likeNum++;
     heartTag.innerText = likeNum;
   });
@@ -41,7 +40,34 @@ for (let i = 0; i < callOnClick.length; i++) {
       return;
     }
     alert(`📞 Calling ${callHead} ${callNumber}`);
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    const presentTime = `${hours}:${minutes}:${seconds}`;
+    const historyCont = document.getElementById("history-cont");
+    const historySection = document.createElement("div");
+    const sectionDesign = `<div class="bg-[#fafafa] p-4 rounded-2xl">
+                  <h1 class="font-semibold">${callHead}</h1>
+                  <div class="flex">
+                    <div class="flex-3">
+                      <span class="text-gray-400">${callNumber}</span>
+                    </div>
+                    <div class="flex-1">
+                      <h1>${presentTime}</h1>
+                    </div>
+                  </div>
+                </div>`;
+    historySection.innerHTML = sectionDesign;
+    historyCont.appendChild(historySection);
     coinCost.innerText = remCoin;
   });
 }
 // call button funtion close
+// clear button start
+const clearBtn = document.getElementById("clear-btn");
+clearBtn.addEventListener("click", function () {
+  const getHistory = document.getElementById("history-cont");
+  getHistory.remove();
+});
+// clear button close
